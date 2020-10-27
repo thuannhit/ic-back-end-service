@@ -1,0 +1,33 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"declaration": true,
+		"removeComments": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"allowSyntheticDefaultImports": true,
+		"target": "es2017",
+		"sourceMap": true,
+		"outDir": "./dist",
+		"baseUrl": "./",
+		"paths": {
+			"@app/*": ["src/*"],
+			"@modules/*": ["src/modules/*"],
+			"@repositories/*": ["src/repositories/*"],
+			"@entities/*": ["src/models/entities/*"],
+			"@dtos/*": ["src/models/dtos/*"],
+			"@interfaces/*": ["src/models/interfaces/*"],
+			"@providers/*": ["src/providers/*"],
+			"@services/*": ["src/services/*"],
+			"@utilities/*": ["src/utilities/*"],
+			"@commons/*": ["src/commons/*"],
+			"@filters/*": ["src/filters/*"],
+			"@middlewares/*": ["src/middlewares/*"],
+			"@custom-exceptions/*": ["src/exceptions/custom-exceptions"],
+			"@custom-exceptions-filters/*": ["src/exceptions/exception-filters"]
+		},
+		"incremental": true,
+    "strict": true,
+    "strictPropertyInitialization": false
+	}
+}
